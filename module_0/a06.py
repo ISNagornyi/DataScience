@@ -1,5 +1,5 @@
 >>> import numpy as np
->>> def game_core_v1(number):
+>>> def game_core_v1(n):
     a = 1
     b = 100   
     count = 0
@@ -19,7 +19,7 @@
     for number in random_array:
         count_ls.append(game_core_v1(number))
     score = int(np.mean(count_ls))
-    print(f"Âàø àëãîðèòì óãàäûâàåò ÷èñëî â ñðåäíåì çà {score} ïîïûòîê")
+    print(f"Ã‚Ã Ã¸ Ã Ã«Ã£Ã®Ã°Ã¨Ã²Ã¬ Ã³Ã£Ã Ã¤Ã»Ã¢Ã Ã¥Ã² Ã·Ã¨Ã±Ã«Ã® Ã¢ Ã±Ã°Ã¥Ã¤Ã­Ã¥Ã¬ Ã§Ã  {score} Ã¯Ã®Ã¯Ã»Ã²Ã®Ãª")
     return(score)
 
 >>> score_game(game_core_v1)
