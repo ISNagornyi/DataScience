@@ -19,7 +19,7 @@
     for number in random_array:
         count_ls.append(game_core_v1(number))
     score = int(np.mean(count_ls))
-    print(f"Âàø àëãîðèòì óãàäûâàåò ÷èñëî â ñðåäíåì çà {score} ïîïûòîê")
+    print(f"Ваш алгоритм угадывает число в среднем за {score} попыток")
     return(score)
 
 >>> score_game(game_core_v1)
